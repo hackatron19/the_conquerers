@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".studentdetails">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="600dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="18dp"
+            android:background="#24212C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/namebox"
+            android:hint="Name"
+            android:textColorHint="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        <EditText
+            android:id="@+id/roll"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/namebox"
+            android:hint="Roll No."
+            android:paddingLeft="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <EditText
+            android:id="@+id/branch"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/namebox"
+            android:paddingLeft="10dp"
+            android:hint="Branch"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/roll" />
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/detailbox"
+            android:hint="Details"
+            android:textColorHint="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/branch" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/submitbtn"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/details" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

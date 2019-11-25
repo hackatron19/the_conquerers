@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A2830"
+    tools:context=".home">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bimage"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="11dp"
+            android:background="@drawable/breakfast"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/limage"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="11dp"
+            android:background="@drawable/lunch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submit1" />
+
+        <ImageView
+            android:id="@+id/dimage"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="11dp"
+            android:background="@drawable/dinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submit2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:text="Breakfast"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/bimage"
+            app:layout_constraintTop_toTopOf="@+id/bimage" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:text="Lunch"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/limage"
+            app:layout_constraintTop_toTopOf="@+id/limage" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="79dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:text="Dinner"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/dimage"
+            app:layout_constraintTop_toTopOf="@+id/dimage" />
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="8dp"
+            android:numStars="7"
+            android:progressBackgroundTint="#FFFFFF"
+            android:progressTint="#EFCD26"
+            android:rating="1"
+            app:layout_constraintEnd_toEndOf="@+id/bimage"
+            app:layout_constraintStart_toStartOf="@+id/bimage"
+            app:layout_constraintTop_toBottomOf="@+id/bimage" />
+
+        <Button
+            android:id="@+id/submit1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:text="Submit"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar1"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar1" />
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="0dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="8dp"
+            android:numStars="7"
+            android:progressBackgroundTint="#FFFFFF"
+            android:progressTint="#EFCD26"
+            android:rating="1"
+            app:layout_constraintEnd_toEndOf="@+id/limage"
+            app:layout_constraintStart_toStartOf="@+id/limage"
+            app:layout_constraintTop_toBottomOf="@+id/limage" />
+
+        <Button
+            android:id="@+id/submit2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:text="Submit"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar2"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+
+        <RatingBar
+            android:id="@+id/ratingBar3"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="8dp"
+            android:numStars="7"
+            android:progressBackgroundTint="#FFFFFF"
+            android:progressTint="#EFCD26"
+            android:rating="1"
+            app:layout_constraintEnd_toEndOf="@+id/dimage"
+            app:layout_constraintStart_toStartOf="@+id/dimage"
+            app:layout_constraintTop_toBottomOf="@+id/dimage" />
+
+        <Button
+            android:id="@+id/submit3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:text="submit"
+            app:layout_constraintStart_toStartOf="@+id/dimage"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
